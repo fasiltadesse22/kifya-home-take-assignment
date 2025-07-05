@@ -1,0 +1,49 @@
+{
+    "namespace": "com.kifya.take.home.assignment.kafka.order.avro.model",
+    "type": "record",
+    "name": "PaymentRequestAvroModel",
+    "fields": [
+        {
+            "name": "id",
+            "type": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "customerId",
+            "type": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "paymentOrderId",
+            "type": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "amount",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 10,
+                "scale": 2
+            }
+        },
+        {
+            "name": "createdAt",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+            }
+        },
+        {
+            "name": "paymentOrderStatus",
+            "type": {
+                  "type": "enum",
+                  "name": "PaymentOrderStatus",
+                  "symbols": ["PENDING", "CANCELED", "COMPLETED"]
+               }
+        }
+    ]
+}
