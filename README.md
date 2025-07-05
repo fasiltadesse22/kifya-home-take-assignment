@@ -109,6 +109,8 @@ The diagram demonstrates how the business domain module is independent of both t
 - ___Database Failure___: Since the payment order is stored in the table even if the database is failed and restat we dont loose any data and the system will contue from where it stops
 - ___The message Queue Failure___: I configured Kafka with volume mapping (persistent storage) to ensure data durability across restarts or failures. Specifically, I mounted Kafka's data directories to persistent volumes on the host machine.
 This setup guarantees that Kafka's commit logs, topic partitions, and message offsets are not lost when the Kafka broker restarts or crashes. As a result, the system maintains reliable message delivery and processing even in the event of unexpected failures, supporting durability guarantees such as "at least once" or "exactly once" delivery semantics.
+![image](https://github.com/user-attachments/assets/61b09faf-7666-40a4-91c6-7d2dc46eac4a)
+
 
     
 
