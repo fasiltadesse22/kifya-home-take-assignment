@@ -71,3 +71,6 @@ sudo java -jar target/payment-order-container-1.0-SNAPSHOT.jar
 
 ### Hexagonal Architecture
 I apply **Hexagonal Architecture**; a software design pattern that distinctly separates the core-business-logic (**payment-order-domain** package) from external systems like APIs, databases, messaging queues, and the user interface.
+
+![image](https://github.com/user-attachments/assets/492c327b-4a1a-4c45-8878-05c16fccdfdb)
+
