@@ -13,6 +13,7 @@ A high-performance, fault-tolerant Spring Boot microservice for processing and o
 - Guarantee at least once delivery to the external provider
 - Allow clients to track payment status by payment-order-id
 - Facilitate provider extensiblity
+- Kafka integration for async workflows
 - Notify(Emit domain events) the status of payment-order (COMPLETED or FAILED) to the downstream systems
 
 ---
