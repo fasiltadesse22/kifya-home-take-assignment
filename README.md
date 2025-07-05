@@ -56,3 +56,10 @@ cd kifya-take-home-assignment/payment-order-service/payment-order-container
 sudo mvn clean install
 sudo java -jar target/payment-order-container-1.0-SNAPSHOT.jar
 ```
+
+### API Endpoints
+
+| Method | Endpoint                            | Description                 |
+| ------ | ----------------------------------- | --------------------------- |
+| POST   | `/payment-orders`                   | Create payment order        |
+| GET    | `/payment-orders/{paymentOrderId}`  | Track payment order status  |
