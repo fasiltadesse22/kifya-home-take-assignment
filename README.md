@@ -64,3 +64,10 @@ sudo java -jar target/payment-order-container-1.0-SNAPSHOT.jar
 | ------ | ----------------------------------- | --------------------------- |
 | POST   | `/payment-orders`                   | Create payment order        |
 | GET    | `/payment-orders/{paymentOrderId}`  | Track payment order status  |
+
+---
+
+## Design and Architecture
+
+### Hexagonal Architecture
+I apply **Hexagonal Architecture**; a software design pattern that distinctly separates the core-business-logic (**payment-order-domain** package) from external systems like APIs, databases, messaging queues, and the user interface.
